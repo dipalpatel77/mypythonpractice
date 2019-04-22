@@ -1,6 +1,7 @@
 class dipal:
     global cd
     cd = 38
+    insum = 23
     def __init__(self):
         print ("hello constructor first")
     def __init__(self,a,b):
@@ -19,6 +20,7 @@ class dipal:
         print(a + b)
         print(cd)
     def sum(self, aAN, bAn):
+        insum = 32
         print('sum')
         print (self.a,self.b)
         #print (a,b)
@@ -26,14 +28,15 @@ class dipal:
         self.y = bAn
         print (aAN, bAn)
         #return self.a + self.b
-    def additon(self,):
+    def additon(epd,):
         print ('d.addition()')
-        print (self.x + self.y)
+        print (epd.x + epd.y)
 
 
 
 d = dipal(3,3)
 d.ocheck( 4, 5)
-print ("cd=",cd)
+d.insum = 52
+print ("cd=",cd,dipal.insum,d.insum)
 print (d.sum(45,5))
 d.additon()
