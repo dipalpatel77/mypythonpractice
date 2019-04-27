@@ -35,6 +35,11 @@ class dipal:
 
 
 d = dipal(3,3)
+print("second object --------------------------------")
+e = dipal(3.12,4)
+print ("comapre the object ---------------------------")
+print (d == e)
+
 d.ocheck( 4, 5)
 d.insum = 52
 print ("cd=",cd,dipal.insum,d.insum)
