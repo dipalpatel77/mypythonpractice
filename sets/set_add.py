@@ -11,4 +11,4 @@ from pip._vendor.distlib.compat import raw_input
 li=set()
 for i in range(int(input())):
     li.add(raw_input())
-print(len(li))
+print (len(li))
