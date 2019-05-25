@@ -6,6 +6,8 @@
 # country = set([raw_input() for i in range(int(input()))])
 # print(len(country))
 # -------------------
+from pip._vendor.distlib.compat import raw_input
+
 li=set()
 for i in range(int(input())):
     li.add(raw_input())

@@ -5,6 +5,6 @@ host = socket.gethostname() # Get local machine name
 port = 12345                # Reserve a port for your service.
 
 s.connect((host, port))
-print s.recv(1024)
+print (s.recv(1024))
 s.close
    

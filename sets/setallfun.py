@@ -18,7 +18,7 @@ def average(array):
     st = set(array)
     age = 20
     name = 'dipalpatel'
-    print "<{0}> is of /</{1}>".format(name,age)
+    print ("<{0}> is of /</{1}>".format(name,age))
     x =len(st)
     for i in range(len(st)):
         s+=st.pop()
@@ -26,4 +26,4 @@ def average(array):
     return s
     # your code goes here
 a = [1,2,3,4,5]
-print average(a)
+print (average(a))

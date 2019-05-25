@@ -7,4 +7,4 @@ def monkey_trouble(a_smile, b_smile):
         return print("false")
 
 
-monkey_trouble(0,0)
+monkey_trouble(0,1)

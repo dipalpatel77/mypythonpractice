@@ -1,3 +1,5 @@
+from pip._vendor.distlib.compat import raw_input
+
 n = input()
 s = set(map(int, raw_input().split())) 
 a = 0
@@ -18,8 +20,8 @@ for i in range(input()):
 			s.discard(int(command[1]))
 			#print s
 	else:
-		print "elif didnt work"
+		print ("elif didnt work")
 #print s
 
-print sum(s)
+print (sum(s))
 #print s

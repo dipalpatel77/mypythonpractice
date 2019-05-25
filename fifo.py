@@ -5,8 +5,8 @@ def minion_game(string):
     string = string.upper()
     consonent_count = 0
     Vowels = 'aeiou'.upper()
-    for i in xrange(len(string)):
-        for j in xrange(i , len(string)):
+    for i in range(len(string)):
+        for j in range(i , len(string)):
             new_list.append(string[i : j + 1])
     for i in range(len(new_list )- 1 ):
         if new_list[i][0] in Vowels:
@@ -14,12 +14,13 @@ def minion_game(string):
         else:
             consonent_count = consonent_count + 1
     if (consonent_count > v_count):
-        print "Stuart " , consonent_count
+        print ("Stuart "  ,consonent_count)
     elif(v_count > consonent_count):
-        print "Kevin"  , v_count
+        print ("Kevin"  , v_count)
     else:
-        print "Draw"
-
+        print ("Draw")
+    print ("Conso = ",consonent_count)
+    print ("Vowels = ", v_count)
 if __name__ == '__main__':
-    s = raw_input()
+    s = input()
     minion_game(s)
