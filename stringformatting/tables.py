@@ -9,6 +9,6 @@ def print_formatted(number):
     s4 = len(n4)
 
     for i in range(1, number+1):
-        print "  "+str(i).rjust(s4, " ")+"  "+str(oct(i)).lstrip('0').rjust(s3, " ")+"  "+str(hex(i)).upper().lstrip('0X').rjust(s2-1, " ")+str(bin(i)).lstrip('0b').rjust(s-1, " ")
+        print ("  "+str(i).rjust(s4, " ")+"  "+str(oct(i)).lstrip('0').rjust(s3, " ")+"  "+str(hex(i)).upper().lstrip('0X').rjust(s2-1, " ")+str(bin(i)).lstrip('0b').rjust(s-1, " "))
 
 print_formatted(19)

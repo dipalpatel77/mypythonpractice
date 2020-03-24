@@ -5,7 +5,7 @@
 # # for i in xrange(N-2,-1,-2): 
 # #     print 
 
-N, M = map(int,raw_input().split())
+N, M = map(int,input().split())
 for i in range(0,N):
     l = 'Dipal' if i == int(N/2) else ('.|.'*(N-(2*abs(i-int(N/2)))))          
     print(l.center(M,'-'))
