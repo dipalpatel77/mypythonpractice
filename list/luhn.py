@@ -15,12 +15,17 @@ def checknum(self):
 
 c = True
 while(c):
-    a = input("enter numbers")
-    b = list(map(int,a))
-    #b.reverse()
-    checknum(b)
-    d = input("do you want to continue 'y' for yes 'n' for no : ")
-    if(d == 'y'):
+    try:
+        a = input("enter numbers : ")
+        if(a.isdigit):
+            b = list(map(int,a))
+            b.reverse()
+            checknum(b)
+            d = input("do you want to continue 'y' for yes 'n' for no : ")
+            if(d == 'y'):
+                c = True
+            else:
+                break;
+    except ValueError:
+        print("invalid input type numbers only")
         c = True
-    else:
-        c = False
